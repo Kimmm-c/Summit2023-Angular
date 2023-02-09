@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+section {
+    padding: 60px 0;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    text-transform: uppercase;
+    width: 100%;
+    right: 0;
+    left: 10%;
+    text-align: left;
+  }
+
+  .carousel-caption h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+  }
