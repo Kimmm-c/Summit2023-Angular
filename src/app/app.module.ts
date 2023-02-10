@@ -8,6 +8,9 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { AudienceComponent } from './audience/audience.component';
 import { RegistrationComponent } from './registration/registration.component';
 
+import { RouterModule } from '@angular/router';
+import { RegistrationDetachedComponent } from './registration-detached/registration-detached.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +21,10 @@ import { RegistrationComponent } from './registration/registration.component';
     RegistrationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {path: 'registration-detached', component: RegistrationDetachedComponent}
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
